@@ -3,6 +3,9 @@ from werkzeug.datastructures import FileStorage
 from werkzeug.utils import secure_filename
 from werkzeug.exceptions import Unauthorized
 from pyzbar.pyzbar import decode
+from PIL import Image
+Image.MAX_IMAGE_PIXELS = None
+
 import pdf2image
 import os
 
